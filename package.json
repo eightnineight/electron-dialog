@@ -27,5 +27,7 @@
     "url": "https://github.com/eightnineight/electron-dialog/issues"
   },
   "homepage": "https://github.com/eightnineight/electron-dialog#readme",
-  "dependencies": {}
+  "devDependencies": {
+    "electron": "^27.0.3"
+  }
 }
