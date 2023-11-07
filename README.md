@@ -40,7 +40,7 @@ file = await dialogRenderer.showSaveDialog({
     buttonLabel: "Save",
 });
 if (!file.canceled) {
-    console.log("open:", file.filePath);
+    console.log("save:", file.filePath);
 }
 
 // options is same with origin electron showMessageBox()
