@@ -48,4 +48,9 @@ dialogRenderer.showMessageBox({
     title: "Message",
     message: "Message Box",
 });
+
+dialogRenderer.showErrorBox({
+    title: "Error",
+    content: "Unknown",
+});
 ```
