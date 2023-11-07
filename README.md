@@ -43,12 +43,14 @@ if (!file.canceled) {
     console.log("open:", file.filePath);
 }
 
+// options is same with origin electron showMessageBox()
 dialogRenderer.showMessageBox({
     type: "info",
     title: "Message",
     message: "Message Box",
 });
 
+// options is same with origin electron showErrorBox()
 dialogRenderer.showErrorBox({
     title: "Error",
     content: "Unknown",
