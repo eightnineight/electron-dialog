@@ -18,6 +18,7 @@
     "showOpenDialog",
     "showSaveDialog",
     "showMessageBox",
+    "showErrorBox",
     "ipcMain",
     "ipcRenderer",
     "ipc",
