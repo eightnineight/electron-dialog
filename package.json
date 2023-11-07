@@ -1,0 +1,31 @@
+{
+  "name": "@eightnineight/electron-dialog",
+  "version": "1.0.0",
+  "description": "electron dialog",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eightnineight/electron-dialog.git"
+  },
+  "keywords": [
+    "electron",
+    "dialog",
+    "ipcMain",
+    "ipcRenderer",
+    "ipc",
+    "renderer",
+    "main"
+  ],
+  "author": "CHIH-HSIN HSU",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eightnineight/electron-dialog/issues"
+  },
+  "homepage": "https://github.com/eightnineight/electron-dialog#readme",
+  "dependencies": {}
+}
