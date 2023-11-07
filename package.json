@@ -1,6 +1,6 @@
 {
   "name": "@eightnineight/electron-dialog",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "electron dialog",
   "main": "index.js",
   "type": "module",
@@ -15,6 +15,10 @@
   "keywords": [
     "electron",
     "dialog",
+    "showOpenDialog",
+    "showSaveDialog",
+    "showMessageBox",
+    "showErrorBox",
     "ipcMain",
     "ipcRenderer",
     "ipc",
@@ -27,5 +31,7 @@
     "url": "https://github.com/eightnineight/electron-dialog/issues"
   },
   "homepage": "https://github.com/eightnineight/electron-dialog#readme",
-  "dependencies": {}
+  "devDependencies": {
+    "electron": "^27.0.3"
+  }
 }
