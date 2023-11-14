@@ -91,10 +91,10 @@ const rendererErrorBox = async (options) => {
 
 const dialogMain = {
     init: mainInit,
-    showOpenDialog: dialog.showOpenDialog,
-    showSaveDialog: dialog.showSaveDialog,
-    showMessageBox: dialog.showMessageBox,
-    showErrorBox: dialog.showErrorBox,
+    showOpenDialog: dialog?.showOpenDialog,
+    showSaveDialog: dialog?.showSaveDialog,
+    showMessageBox: dialog?.showMessageBox,
+    showErrorBox: dialog?.showErrorBox,
 };
 
 const dialogRenderer = {
