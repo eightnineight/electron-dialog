@@ -63,28 +63,28 @@ const mainInit = () => {
 const rendererShowOpenDialog = async (options) => {
     const data = await ipcRenderer.invoke(SHOW_OPEN_FILE_DIALOG, options);
     if (data?.error) {
-        throw error
+        throw data.error
     }
     return data?.result;
 }
 const rendererSaveOpenDialog = async (options) => {
     const data = await ipcRenderer.invoke(SHOW_SAVE_FILE_DIALOG, options);
     if (data?.error) {
-        throw error
+        throw data.error
     }
     return data?.result;
 }
 const rendererMessageBox = async (options) => {
     const data = await ipcRenderer.invoke(SHOW_MESSAGE_BOX, options);
     if (data?.error) {
-        throw error
+        throw data.error
     }
     return data?.result;
 }
 const rendererErrorBox = async (options) => {
     const data = await ipcRenderer.invoke(SHOW_ERROR_BOX, options);
     if (data?.error) {
-        throw error
+        throw data.error
     }
     return data?.result;
 }
