@@ -13,20 +13,18 @@ npm install @eightnineight/electron-dialog
 main process
 
 ```js
-import { dialogMain } from "@eightnineight/electron-dialog";
-
-dialogMain.init();
+import "@eightnineight/electron-dialog";
 ```
 
 renderer process
 
 ```js
-import { dialogRenderer } from "@eightnineight/electron-dialog";
+import { showOpenDialog, showSaveDialog, showMessageBox, showErrorBox } from "@eightnineight/electron-dialog";
 
 let file;
 
 // the parameters are the same as those in the original electron showOpenDialog()
-file = await dialogRenderer.showOpenDialog({
+file = await showOpenDialog({
     title: "Open File",
     buttonLabel: "Open",
 });
@@ -35,7 +33,7 @@ if (!file.canceled) {
 }
 
 // the parameters are the same as those in the original electron showSaveDialog()
-file = await dialogRenderer.showSaveDialog({
+file = await showSaveDialog({
     title: "Save File",
     buttonLabel: "Save",
 });
@@ -44,14 +42,14 @@ if (!file.canceled) {
 }
 
 // the parameters are the same as those in the original electron showMessageBox()
-dialogRenderer.showMessageBox({
+showMessageBox({
     type: "info",
     title: "Message",
     message: "Message Box",
 });
 
 // the parameters are the same as those in the original electron showErrorBox()
-dialogRenderer.showErrorBox({
+showErrorBox({
     title: "Error",
     content: "Unknown",
 });
