@@ -90,11 +90,7 @@ const rendererErrorBox = async (options) => {
 }
 
 const dialogMain = {
-    init: mainInit,
-    showOpenDialog: dialog?.showOpenDialog,
-    showSaveDialog: dialog?.showSaveDialog,
-    showMessageBox: dialog?.showMessageBox,
-    showErrorBox: dialog?.showErrorBox,
+    mainInit,
 };
 
 const dialogRenderer = {
@@ -104,7 +100,15 @@ const dialogRenderer = {
     showErrorBox: rendererErrorBox,
 };
 
+if (process?.type === 'browser') {
+    mainInit();
+}
+
 export {
     dialogMain,
     dialogRenderer,
+    rendererShowOpenDialog as showOpenDialog,
+    rendererSaveOpenDialog as showSaveDialog,
+    rendererMessageBox as showMessageBox,
+    rendererErrorBox as showErrorBox,
 };
